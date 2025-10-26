@@ -64,14 +64,35 @@
     /* Первая фотография в блоке 5 */
     .carousel[data-name="block-5"] .slide:first-child img{ object-position:0% 50%; }
 
-    .back-btn{ position:fixed; left:12px; top:50%; transform:translateY(-50%); z-index:9999; display:flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%; background:var(--card); box-shadow:var(--shadow); color:#0b111a; text-decoration:none; font-size:22px; }
-    .back-btn:hover{ filter:brightness(0.96); }
+    .back-fab{
+      position:fixed; left:12px; top:50%; transform:translateY(-50%);
+      z-index:9999;
+      width:48px; height:48px;
+      display:grid; place-items:center;
+      text-decoration:none; color:#0b111a;
+    }
+    .back-fab::before{
+      content:"";
+      position:absolute; inset:0;
+      border-radius:999px;
+      background:#fff;
+      box-shadow: 0 20px 50px rgba(26,34,56,.12), 0 2px 6px rgba(26,34,56,.06);
+    }
+    .back-fab svg{
+      width:22px; height:22px;
+      position:relative;
+    }
+    .back-fab:active{ transform:translateY(-50%) scale(.98); }
 
     @media (max-width:640px){ .card{ padding:16px 14px 22px; } .brand{ width:46px;height:46px;border-radius:14px;} .wrap{ padding:14px; } }
   </style>
 </head>
 <body>
-  <a class="back-btn" href="https://babylon-tamara.ru" aria-label="Назад">←</a>
+  <a class="back-fab" href="https://babylon-tamara.ru" aria-label="Назад на главную">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
   <div class="wrap">
     <div class="card">
       <div class="header">
