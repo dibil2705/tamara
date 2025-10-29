@@ -35,7 +35,20 @@
     .card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:20px 20px 28px; margin-bottom:28px; overflow:hidden; }
 
     .header{ display:flex; align-items:center; gap:12px; padding:8px 6px 2px 6px; }
-    .brand{ width:54px; height:54px; flex:0 0 auto; border-radius:18px; background:var(--grad-blue); box-shadow:0 8px 24px rgba(59,183,255,.35); display:grid; place-items:center; color:white; font-weight:800; letter-spacing:.5px; }
+    .brand {
+        width: 54px;
+        height: 54px;
+        flex: 0 0 auto;
+        border-radius: 18px;
+        background: #eee8de; /* <-- вот изменение */
+        box-shadow: 0 8px 24px rgba(238, 232, 222, 0.35);
+        display: grid;
+        place-items: center;
+        color: #000000;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+}
+
     h1{ font-size: clamp(20px, 3.2vw, 32px); line-height:1.2; margin:0; }
     .sub{color:var(--muted); font-size:14px;}
 
