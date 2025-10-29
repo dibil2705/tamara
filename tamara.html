@@ -13,8 +13,11 @@
       --radius:28px;
       /* градиенты в стиле референса */
       --grad-blue:linear-gradient(135deg,#3bb7ff 0%,#6aa6ff 100%);
-      --grad-green:linear-gradient(135deg,#34d399 0%,#60a5fa 100%);
-      --grad-orange:linear-gradient(135deg,#f59e0b 0%,#f6b88f 100%);
+      --coal:#1c1d1f;
+      --graphite:#3f4349;
+      --warm-beige:#d9c7b0;
+      --caramel:#b57a4f;
+      --ivory:#f5f1e7;
       --shadow: 0 20px 50px rgba(26,34,56,.12), 0 2px 6px rgba(26,34,56,.06);
     }
 
@@ -36,10 +39,47 @@
     h1{ font-size: clamp(20px, 3.2vw, 32px); line-height:1.2; margin:0; }
     .sub{color:var(--muted); font-size:14px;}
 
-    .pill{ display:inline-flex; align-items:center; gap:10px; padding:14px 18px; border-radius:18px; color:#0b111a; background:#f3f4f6; font-weight:700; letter-spacing:.3px; box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 2px 8px rgba(16,24,40,.05); }
-    .pill.blue { background-image: var(--grad-blue); color:#fff; text-shadow:0 1px 0 rgba(0,0,0,.15); }
-    .pill.green{ background-image: var(--grad-green); color:#fff; text-shadow:0 1px 0 rgba(0,0,0,.15); }
-    .pill.orange{ background-image: var(--grad-orange); color:#1f1305; font-weight:800; }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius:18px;
+      font-weight:700;
+      letter-spacing:.3px;
+      background:var(--ivory);
+      color:var(--coal);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 2px 8px rgba(16,24,40,.05);
+      border:1px solid rgba(20,24,31,.12);
+    }
+    .pill.coal{
+      background:var(--coal);
+      color:#f5f5f5;
+      text-shadow:0 1px 0 rgba(0,0,0,.25);
+      border-color:transparent;
+    }
+    .pill.graphite{
+      background:linear-gradient(135deg,#4c5157 0%, var(--graphite) 100%);
+      color:#f7f7f4;
+      text-shadow:0 1px 0 rgba(0,0,0,.2);
+      border-color:transparent;
+    }
+    .pill.beige{
+      background:linear-gradient(135deg,#e2d2be 0%, var(--warm-beige) 100%);
+      color:#322618;
+      border-color:rgba(140,118,90,.25);
+    }
+    .pill.caramel{
+      background:linear-gradient(135deg,#c88a5d 0%, var(--caramel) 100%);
+      color:#fff7ef;
+      text-shadow:0 1px 0 rgba(0,0,0,.18);
+      border-color:transparent;
+    }
+    .pill.ivory{
+      background:linear-gradient(135deg, rgba(245,241,231,.95) 0%, rgba(235,229,218,.95) 100%);
+      color:#2a2a2a;
+      border-color:rgba(50,50,50,.08);
+    }
 
     .section{ margin-top:10px; }
 
@@ -117,7 +157,7 @@
 
     <!-- БЛОК 1 -->
     <div class="card section" id="block1">
-      <span class="pill blue">Scarlet Rose</span>
+      <span class="pill coal">Scarlet Rose</span>
       <div class="carousel" data-name="block-1">
         <div class="track">
 
@@ -133,7 +173,7 @@
 
     <!-- БЛОК 2 -->
     <div class="card section" id="block2">
-      <span class="pill green">Multifaceted flower</span>
+      <span class="pill graphite">Multifaceted flower</span>
       <div class="carousel" data-name="block-2">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/zGjjBxwq/Whats-App-Image-2025-10-25-at-12-40-29.jpg" alt="Multifaceted flower — 1"></div>
@@ -152,7 +192,7 @@
 
     <!-- БЛОК № 1 -->
     <div class="card section" id="block-n1">
-      <span class="pill orange">Charming Opium</span>
+      <span class="pill beige">Charming Opium</span>
       <div class="carousel" data-name="block-n1">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/FKHxJ0G0/Whats-App-Image-2025-10-25-at-12-38-51.jpg" alt="Charming Opium — 1"></div>
@@ -167,7 +207,7 @@
 
     <!-- БЛОК № 2 -->
     <div class="card section" id="block-n2">
-      <span class="pill blue">Pure Lolita</span>
+      <span class="pill caramel">Pure Lolita</span>
       <div class="carousel" data-name="block-n2">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/KY85gtQn/Whats-App-Image-2025-10-25-at-12-38-50.jpg" alt="Pure Lolita — 1"></div>
@@ -182,7 +222,7 @@
 
     <!-- БЛОК № 3 -->
     <div class="card section" id="block-n3">
-      <span class="pill green">Black Orchid</span>
+      <span class="pill ivory">Black Orchid</span>
       <div class="carousel" data-name="block-n3">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/HLv90jPc/Whats-App-Image-2025-10-25-at-12-39-04.jpg" alt="Black Orchid — 1"></div>
@@ -194,7 +234,7 @@
 
     <!-- БЛОК ЙОГА -->
     <div class="card section" id="block-yoga">
-      <span class="pill blue">Lotus of the Ganges</span>
+      <span class="pill coal">Lotus of the Ganges</span>
       <div class="carousel" data-name="block-yoga">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/521gbhC6/Whats-App-Image-2025-10-25-at-12-39-47.jpg" alt="Lotus of the Ganges — 1"></div>
@@ -209,7 +249,7 @@
 
     <!-- БЛОК 3 -->
     <div class="card section" id="block3">
-      <span class="pill orange">Creative Bouquet</span>
+      <span class="pill graphite">Creative Bouquet</span>
       <div class="carousel" data-name="block-3">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/B6g75Xg0/Whats-App-Image-2025-10-25-at-12-29-57.jpg" alt="Creative Bouquet — 1"></div>
@@ -225,7 +265,7 @@
 
     <!-- БЛОК 4 -->
     <div class="card section" id="block4">
-      <span class="pill blue">Damask Rose</span>
+      <span class="pill beige">Damask Rose</span>
       <div class="carousel" data-name="block-4">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/sXN7Rzf3/Whats-App-Image-2025-10-25-at-12-40-23.jpg" alt="Damask Rose — 1"></div>
@@ -241,7 +281,7 @@
 
     <!-- БЛОК 5 -->
     <div class="card section" id="block5">
-      <span class="pill green">Sharp Gladiolus</span>
+      <span class="pill caramel">Sharp Gladiolus</span>
       <div class="carousel" data-name="block-5">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/vTnzqT7R/Whats-App-Image-2025-10-25-at-12-40-11.jpg" alt="Sharp Gladiolus — 1"></div>
@@ -253,7 +293,7 @@
 
     <!-- БЛОК 6 -->
     <div class="card section" id="block6">
-      <span class="pill orange">Victoria Аmazonica</span>
+      <span class="pill ivory">Victoria Аmazonica</span>
       <div class="carousel" data-name="block-6">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/KYY5XJrS/Whats-App-Image-2025-10-25-at-12-39-34.jpg" alt="Victoria Аmazonica — 1"></div>
@@ -269,7 +309,7 @@
 
     <!-- БЛОК 7 -->
     <div class="card section" id="block7">
-      <span class="pill blue">Блок 7</span>
+      <span class="pill coal">Блок 7</span>
       <div class="carousel" data-name="block-7">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/pd7zwxLy/Whats-App-Image-2025-10-25-at-12-39-31.jpg" alt="Блок 7 — 1"></div>
@@ -281,7 +321,7 @@
 
     <!-- БЛОК 8 -->
     <div class="card section" id="block8">
-      <span class="pill green">Блок 8</span>
+      <span class="pill graphite">Блок 8</span>
       <div class="carousel" data-name="block-8">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/T3sKw0M5/Whats-App-Image-2025-10-25-at-12-39-22.jpg" alt="Блок 8 — 1"></div>
@@ -293,7 +333,7 @@
 
     <!-- БЛОК 9 -->
     <div class="card section" id="block9">
-      <span class="pill blue">Блок 9</span>
+      <span class="pill beige">Блок 9</span>
       <div class="carousel" data-name="block-9">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/0NyCJ7Zz/Whats-App-Image-2025-10-25-at-12-38-47.jpg" alt="Блок 9 — 1"></div>
@@ -307,7 +347,7 @@
 
     <!-- БЛОК 10 -->
     <div class="card section" id="block10">
-      <span class="pill green">Блок 10</span>
+      <span class="pill caramel">Блок 10</span>
       <div class="carousel" data-name="block-10">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/xTCjzmRD/Whats-App-Image-2025-10-25-at-12-39-10.jpg" alt="Блок 10 — 1"></div>
@@ -319,7 +359,7 @@
 
     <!-- БЛОК 11 -->
     <div class="card section" id="block11">
-      <span class="pill orange">Блок 11</span>
+      <span class="pill ivory">Блок 11</span>
       <div class="carousel" data-name="block-11">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/SsdqXQ21/Whats-App-Image-2025-10-25-at-12-38-53.jpg" alt="Блок 11 — 1"></div>
@@ -334,7 +374,7 @@
 
     <!-- БЛОК 12 -->
     <div class="card section" id="block12">
-      <span class="pill blue">Блок 12</span>
+      <span class="pill coal">Блок 12</span>
       <div class="carousel" data-name="block-12">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/hGqqpQ9v/Whats-App-Image-2025-10-25-at-12-32-50.jpg" alt="Блок 12 — 1"></div>
@@ -354,7 +394,7 @@
 
     <!-- БЛОК 13 -->
     <div class="card section" id="block13">
-      <span class="pill green">Блок 13</span>
+      <span class="pill graphite">Блок 13</span>
       <div class="carousel" data-name="block-13">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/FsMtHkCD/Whats-App-Image-2025-10-25-at-12-32-45.jpg" alt="Блок 13 — 1"></div>
@@ -366,7 +406,7 @@
 
     <!-- БЛОК 14 -->
     <div class="card section" id="block14">
-      <span class="pill orange">Блок 14</span>
+      <span class="pill beige">Блок 14</span>
       <div class="carousel" data-name="block-14">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/htYtnBJV/Whats-App-Image-2025-10-25-at-12-39-51.jpg" alt="Блок 14 — 1"></div>
@@ -384,7 +424,7 @@
 
     <!-- БЛОК 15 -->
     <div class="card section" id="block15">
-      <span class="pill blue">Блок 15</span>
+      <span class="pill caramel">Блок 15</span>
       <div class="carousel" data-name="block-15">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/50R7KDZz/Whats-App-Image-2025-10-25-at-12-32-25.jpg" alt="Блок 15 — 1"></div>
@@ -398,7 +438,7 @@
 
     <!-- БЛОК 16 (НЕ МЕНЯЕМ) -->
     <div class="card section" id="block16">
-      <span class="pill green">Блок 16</span>
+      <span class="pill ivory">Блок 16</span>
       <div class="carousel" data-name="block-16">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/Vkhkw8Sr/Whats-App-Image-2025-10-25-at-12-39-49.jpg" alt="Блок 16 — 1"></div>
@@ -416,7 +456,7 @@
 
     <!-- БЛОК 17 -->
     <div class="card section" id="block17">
-      <span class="pill blue">Блок 17</span>
+      <span class="pill coal">Блок 17</span>
       <div class="carousel" data-name="block-17">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/fRvhqT5y/Whats-App-Image-2025-10-25-at-12-32-21.jpg" alt="Блок 17 — 1"></div>
@@ -427,7 +467,7 @@
 
     <!-- БЛОК 18 -->
     <div class="card section" id="block18">
-      <span class="pill green">Блок 18</span>
+      <span class="pill graphite">Блок 18</span>
       <div class="carousel" data-name="block-18">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/ZqqXfPCj/Whats-App-Image-2025-10-25-at-12-31-59.jpg" alt="Блок 18 — 1"></div>
@@ -450,7 +490,7 @@
 
     <!-- БЛОК 19 -->
     <div class="card section" id="block19">
-      <span class="pill blue">Блок 19</span>
+      <span class="pill beige">Блок 19</span>
       <div class="carousel" data-name="block-19">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://allwebs.ru/image/WhatsApp-Image-2025-10-29-at-16.39.07.Ozcdet" alt="Блок 19 — 1"></div>
@@ -466,7 +506,7 @@
 
     <!-- БЛОК 20 -->
     <div class="card section" id="block20">
-      <span class="pill green">Блок 20</span>
+      <span class="pill caramel">Блок 20</span>
       <div class="carousel" data-name="block-20">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/3r2fFft8/Whats-App-Image-2025-10-25-at-12-31-46.jpg" alt="Блок 20 — 1"></div>
@@ -479,7 +519,7 @@
 
     <!-- БЛОК 21 -->
     <div class="card section" id="block21">
-      <span class="pill blue">Блок 21</span>
+      <span class="pill ivory">Блок 21</span>
       <div class="carousel" data-name="block-21">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/fRq8RGRf/Whats-App-Image-2025-10-25-at-12-31-42.jpg" alt="Блок 21 — 1"></div>
@@ -493,7 +533,7 @@
 
     <!-- БЛОК 22 -->
     <div class="card section" id="block22">
-      <span class="pill green">Блок 22</span>
+      <span class="pill coal">Блок 22</span>
       <div class="carousel" data-name="block-22">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/1XMpYFnP/Whats-App-Image-2025-10-25-at-12-31-40.jpg" alt="Блок 22 — 1"></div>
@@ -505,7 +545,7 @@
 
     <!-- БЛОК 23 -->
     <div class="card section" id="block23">
-      <span class="pill blue">Блок 23</span>
+      <span class="pill graphite">Блок 23</span>
       <div class="carousel" data-name="block-23">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/YSgQBZGz/Whats-App-Image-2025-10-25-at-12-31-30.jpg" alt="Блок 23 — 1"></div>
@@ -516,7 +556,7 @@
 
     <!-- БЛОК 24 -->
     <div class="card section" id="block24">
-      <span class="pill green">Блок 24</span>
+      <span class="pill beige">Блок 24</span>
       <div class="carousel" data-name="block-24">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/WbHZFT0J/Whats-App-Image-2025-10-25-at-12-31-28.jpg" alt="Блок 24 — 1"></div>
@@ -527,7 +567,7 @@
 
     <!-- БЛОК 25 -->
     <div class="card section" id="block25">
-      <span class="pill blue">Блок 25</span>
+      <span class="pill caramel">Блок 25</span>
       <div class="carousel" data-name="block-25">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/QxwBNSrQ/Whats-App-Image-2025-10-25-at-12-31-21.jpg" alt="Блок 25 — 1"></div>
@@ -539,7 +579,7 @@
 
     <!-- БЛОК 26 -->
     <div class="card section" id="block26">
-      <span class="pill green">Блок 26</span>
+      <span class="pill ivory">Блок 26</span>
       <div class="carousel" data-name="block-26">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/GmvpLCKb/Whats-App-Image-2025-10-25-at-12-31-16.jpg" alt="Блок 26 — 1"></div>
@@ -551,7 +591,7 @@
 
     <!-- БЛОК 27 -->
     <div class="card section" id="block27">
-      <span class="pill blue">Блок 27</span>
+      <span class="pill coal">Блок 27</span>
       <div class="carousel" data-name="block-27">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/MHcWh2XK/Whats-App-Image-2025-10-25-at-12-30-57.jpg" alt="Блок 27 — 1"></div>
@@ -567,7 +607,7 @@
 
     <!-- БЛОК 28 -->
     <div class="card section" id="block28">
-      <span class="pill green">Блок 28</span>
+      <span class="pill graphite">Блок 28</span>
       <div class="carousel" data-name="block-28">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/sgCV0Lrm/Whats-App-Image-2025-10-25-at-12-30-51.jpg" alt="Блок 28 — 1"></div>
@@ -580,7 +620,7 @@
 
     <!-- БЛОК 29 -->
     <div class="card section" id="block29">
-      <span class="pill blue">Блок 29</span>
+      <span class="pill beige">Блок 29</span>
       <div class="carousel" data-name="block-29">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/3RN7v5XC/Whats-App-Image-2025-10-25-at-12-30-50.jpg" alt="Блок 29 — 1"></div>
@@ -591,7 +631,7 @@
 
     <!-- БЛОК 30 -->
     <div class="card section" id="block30">
-      <span class="pill green">Блок 30</span>
+      <span class="pill caramel">Блок 30</span>
       <div class="carousel" data-name="block-30">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/9FZ4MZF2/Whats-App-Image-2025-10-25-at-12-30-42.jpg" alt="Блок 30 — 1"></div>
@@ -608,7 +648,7 @@
 
     <!-- БЛОК 32 -->
 <div class="card section" id="block31">
-  <span class="pill blue">Блок 31</span>
+  <span class="pill ivory">Блок 31</span>
   <div class="carousel" data-name="block-31">
     <div class="track">
       <div class="slide"><img loading="lazy" src="https://i.postimg.cc/Y0gSvB7W/Whats-App-Image-2025-10-25-at-12-30-31.jpg" alt="Блок 31 — 1"></div>
@@ -624,7 +664,7 @@
 
     <!-- БЛОК 32 -->
     <div class="card section" id="block32">
-      <span class="pill green">Блок 32</span>
+      <span class="pill coal">Блок 32</span>
       <div class="carousel" data-name="block-32">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/y8n8gPq7/Whats-App-Image-2025-10-25-at-12-30-20.jpg" alt="Блок 32 — 1"></div>
@@ -636,7 +676,7 @@
 
     <!-- БЛОК 33 -->
     <div class="card section" id="block33">
-      <span class="pill blue">Блок 33</span>
+      <span class="pill graphite">Блок 33</span>
       <div class="carousel" data-name="block-33">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/MHRGnJwj/Whats-App-Image-2025-10-25-at-12-30-32.jpg" alt="Блок 33 — 1"></div>
@@ -648,7 +688,7 @@
 
     <!-- БЛОК 34 -->
     <div class="card section" id="block34">
-      <span class="pill green">Блок 34</span>
+      <span class="pill beige">Блок 34</span>
       <div class="carousel" data-name="block-34">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/ZnhSDBky/Whats-App-Image-2025-10-25-at-12-30-12.jpg" alt="Блок 34 — 1"></div>
@@ -663,7 +703,7 @@
 
     <!-- БЛОК 36 -->
     <div class="card section" id="block36">
-      <span class="pill green">Блок 36</span>
+      <span class="pill caramel">Блок 36</span>
       <div class="carousel" data-name="block-36">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/J08f5fZV/Whats-App-Image-2025-10-25-at-12-30-06.jpg" alt="Блок 36 — 1"></div>
@@ -674,7 +714,7 @@
 
     <!-- БЛОК 37 -->
     <div class="card section" id="block37">
-      <span class="pill blue">Блок 37</span>
+      <span class="pill ivory">Блок 37</span>
       <div class="carousel" data-name="block-37">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/nz45r35F/Whats-App-Image-2025-10-25-at-12-30-04.jpg" alt="Блок 37 — 1"></div>
@@ -686,7 +726,7 @@
 
     <!-- БЛОК 38 -->
     <div class="card section" id="block38">
-      <span class="pill green">Блок 38</span>
+      <span class="pill coal">Блок 38</span>
       <div class="carousel" data-name="block-38">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/5N7rXY7d/Whats-App-Image-2025-10-25-at-12-29-57.jpg" alt="Блок 38 — 1"></div>
@@ -698,7 +738,7 @@
 
     <!-- БЛОК 40 -->
     <div class="card section" id="block40">
-      <span class="pill green">Блок 40</span>
+      <span class="pill graphite">Блок 40</span>
       <div class="carousel" data-name="block-40">
         <div class="track">
           <div class="slide"><img loading="lazy" src="https://i.postimg.cc/wMBVzFdq/Whats-App-Image-2025-10-25-at-12-25-31.jpg" alt="Блок 40 — 1"></div>
