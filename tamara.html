@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Портфолио — Галерея свайпом</title>
+  <title>Portfolio — Swipe Gallery</title>
   <style>
     :root{
-      --bg:#eef1f5;            /* общий фон как в референсе */
-      --card:#ffffff;          /* цвет карточек */
+      --bg:#eef1f5;            /* overall background as in the reference */
+      --card:#ffffff;          /* card color */
       --text:#14181f;
       --muted:#667085;
       --radius:28px;
-      /* градиенты в стиле референса */
+      /* gradients in the style of the reference */
       --grad-blue:linear-gradient(135deg,#3bb7ff 0%,#6aa6ff 100%);
       --coal:#1c1d1f;
       --graphite:#3f4349;
@@ -40,7 +40,7 @@
         height: 54px;
         flex: 0 0 auto;
         border-radius: 18px;
-        background: #eee8de; /* <-- вот изменение */
+        background: #eee8de; /* <-- this is the change */
         box-shadow: 0 8px 24px rgba(238, 232, 222, 0.35);
         display: grid;
         place-items: center;
@@ -104,18 +104,18 @@
     .slide{ flex:0 0 var(--slide-width); aspect-ratio:3/4; position:relative; scroll-snap-align:center; border-radius: clamp(22px, 4vw, 32px); overflow:hidden; box-shadow:0 18px 34px rgba(11,17,26,.32); }
     .slide img{ width:100%; height:100%; object-fit:cover; display:block; }
 
-    /* Позиция кадров в блоках 11 и 15 */
+    /* Frame position in blocks 11 and 15 */
     .carousel[data-name="block-11"] .slide img,
     .carousel[data-name="block-15"] .slide img{ object-position:50% 0%; }
 
-    /* Позиция кадров в блоках 29 и 37 */
+    /* Frame position in blocks 29 and 37 */
     .carousel[data-name="block-29"] .slide img,
     .carousel[data-name="block-37"] .slide img{ object-position:50% 0%; }
 
-    /* Позиция кадра в блоке 17 */
+    /* Frame position in block 17 */
     .carousel[data-name="block-17"] .slide img{ object-position:50% 10%; }
 
-    /* Первая фотография в блоке 5 */
+    /* First photo in block 5 */
     .carousel[data-name="block-5"] .slide:first-child img{ object-position:0% 50%; }
 
     .back-fab{
@@ -152,7 +152,7 @@
   </style>
 </head>
 <body>
-  <a class="back-fab" href="https://babylon-tamara.ru" aria-label="Назад на главную">
+  <a class="back-fab" href="https://babylon-tamara.ru" aria-label="Back to the homepage">
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
@@ -162,13 +162,13 @@
       <div class="header">
         <div class="brand">PF</div>
         <div>
-          <h1>Портфолио • Галерея свайпом</h1>
-          <div class="sub">Свайпайте влево/вправо — никаких кнопок. Прокрутка страницы — для переключения блоков.</div>
+          <h1>Portfolio • Swipe Gallery</h1>
+          <div class="sub">Swipe left or right — no buttons needed. Scroll the page to switch blocks.</div>
         </div>
       </div>
     </div>
 
-    <!-- БЛОК 1 -->
+    <!-- BLOCK 1 -->
     <div class="card section" id="block1">
       <span class="pill coal">Scarlet Rose</span>
       <div class="carousel" data-name="block-1">
@@ -184,7 +184,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 2 -->
+    <!-- BLOCK 2 -->
     <div class="card section" id="block2">
       <span class="pill graphite">Multifaceted flower</span>
       <div class="carousel" data-name="block-2">
@@ -203,7 +203,7 @@
       </div>
     </div>
 
-    <!-- БЛОК № 1 -->
+    <!-- BLOCK № 1 -->
     <div class="card section" id="block-n1">
       <span class="pill beige">Charming Opium</span>
       <div class="carousel" data-name="block-n1">
@@ -218,7 +218,7 @@
       </div>
     </div>
 
-    <!-- БЛОК № 2 -->
+    <!-- BLOCK № 2 -->
     <div class="card section" id="block-n2">
       <span class="pill caramel">Pure Lolita</span>
       <div class="carousel" data-name="block-n2">
@@ -233,7 +233,7 @@
       </div>
     </div>
 
-    <!-- БЛОК № 3 -->
+    <!-- BLOCK № 3 -->
     <div class="card section" id="block-n3">
       <span class="pill ivory">Black Orchid</span>
       <div class="carousel" data-name="block-n3">
@@ -245,7 +245,7 @@
       </div>
     </div>
 
-    <!-- БЛОК ЙОГА -->
+    <!-- BLOCK YOGA -->
     <div class="card section" id="block-yoga">
       <span class="pill coal">Lotus of the Ganges</span>
       <div class="carousel" data-name="block-yoga">
@@ -260,7 +260,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 3 -->
+    <!-- BLOCK 3 -->
     <div class="card section" id="block3">
       <span class="pill graphite">Creative Bouquet</span>
       <div class="carousel" data-name="block-3">
@@ -276,7 +276,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 4 -->
+    <!-- BLOCK 4 -->
     <div class="card section" id="block4">
       <span class="pill beige">Damask Rose</span>
       <div class="carousel" data-name="block-4">
@@ -292,7 +292,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 5 -->
+    <!-- BLOCK 5 -->
     <div class="card section" id="block5">
       <span class="pill caramel">Sharp Gladiolus</span>
       <div class="carousel" data-name="block-5">
@@ -304,23 +304,23 @@
       </div>
     </div>
 
-    <!-- БЛОК 6 -->
+    <!-- BLOCK 6 -->
     <div class="card section" id="block6">
-      <span class="pill ivory">Victoria Аmazonica</span>
+      <span class="pill ivory">Victoria Amazonica</span>
       <div class="carousel" data-name="block-6">
         <div class="track">
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/KYY5XJrS/Whats-App-Image-2025-10-25-at-12-39-34.jpg" alt="Victoria Аmazonica — 1"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/N0PkQmpc/Whats-App-Image-2025-10-25-at-12-39-38.jpg" alt="Victoria Аmazonica — 2"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/s20437wy/Whats-App-Image-2025-10-25-at-12-39-38-1.jpg" alt="Victoria Аmazonica — 3"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/nLL180K4/Whats-App-Image-2025-10-25-at-12-39-39.jpg" alt="Victoria Аmazonica — 4"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/R00TrX1b/Whats-App-Image-2025-10-25-at-12-39-40.jpg" alt="Victoria Аmazonica — 5"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/zffkm0w2/Whats-App-Image-2025-10-25-at-12-39-40-1.jpg" alt="Victoria Аmazonica — 6"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/QMMqL0g2/Whats-App-Image-2025-10-25-at-12-39-42.jpg" alt="Victoria Аmazonica — 7"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/KYY5XJrS/Whats-App-Image-2025-10-25-at-12-39-34.jpg" alt="Victoria Amazonica — 1"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/N0PkQmpc/Whats-App-Image-2025-10-25-at-12-39-38.jpg" alt="Victoria Amazonica — 2"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/s20437wy/Whats-App-Image-2025-10-25-at-12-39-38-1.jpg" alt="Victoria Amazonica — 3"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/nLL180K4/Whats-App-Image-2025-10-25-at-12-39-39.jpg" alt="Victoria Amazonica — 4"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/R00TrX1b/Whats-App-Image-2025-10-25-at-12-39-40.jpg" alt="Victoria Amazonica — 5"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/zffkm0w2/Whats-App-Image-2025-10-25-at-12-39-40-1.jpg" alt="Victoria Amazonica — 6"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/QMMqL0g2/Whats-App-Image-2025-10-25-at-12-39-42.jpg" alt="Victoria Amazonica — 7"></div>
         </div>
       </div>
     </div>
 
-    <!-- БЛОК 7 -->
+    <!-- BLOCK 7 -->
     <div class="card section" id="block7">
       <span class="pill coal">Indian Jasmine</span>
       <div class="carousel" data-name="block-7">
@@ -332,7 +332,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 8 -->
+    <!-- BLOCK 8 -->
     <div class="card section" id="block8">
       <span class="pill graphite">Indian Saxaul</span>
       <div class="carousel" data-name="block-8">
@@ -344,7 +344,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 9 -->
+    <!-- BLOCK 9 -->
     <div class="card section" id="block9">
       <span class="pill beige">American Jojoba</span>
       <div class="carousel" data-name="block-9">
@@ -358,7 +358,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 10 -->
+    <!-- BLOCK 10 -->
     <div class="card section" id="block10">
       <span class="pill caramel">Pamir Tulip</span>
       <div class="carousel" data-name="block-10">
@@ -370,7 +370,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 11 -->
+    <!-- BLOCK 11 -->
     <div class="card section" id="block11">
       <span class="pill ivory">Koshur Gulab</span>
       <div class="carousel" data-name="block-11">
@@ -385,7 +385,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 12 -->
+    <!-- BLOCK 12 -->
     <div class="card section" id="block12">
       <span class="pill coal">Aristocratic Peony</span>
       <div class="carousel" data-name="block-12">
@@ -405,7 +405,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 13 -->
+    <!-- BLOCK 13 -->
     <div class="card section" id="block13">
       <span class="pill graphite">Wild Orchid</span>
       <div class="carousel" data-name="block-13">
@@ -417,7 +417,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 14 -->
+    <!-- BLOCK 14 -->
     <div class="card section" id="block14">
       <span class="pill beige">Light-loving Lily</span>
       <div class="carousel" data-name="block-14">
@@ -435,7 +435,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 15 -->
+    <!-- BLOCK 15 -->
     <div class="card section" id="block15">
       <span class="pill caramel">Blooming Cactus</span>
       <div class="carousel" data-name="block-15">
@@ -449,7 +449,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 16 (НЕ МЕНЯЕМ) -->
+    <!-- BLOCK 16 (DO NOT CHANGE) -->
     <div class="card section" id="block16">
       <span class="pill ivory">Assorted Flowers</span>
       <div class="carousel" data-name="block-16">
@@ -467,7 +467,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 17 -->
+    <!-- BLOCK 17 -->
     <div class="card section" id="block17">
       <span class="pill coal">The Hardy Dahlia</span>
       <div class="carousel" data-name="block-17">
@@ -478,7 +478,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 18 -->
+    <!-- BLOCK 18 -->
     <div class="card section" id="block18">
       <span class="pill graphite">Intelligent Rosemary</span>
       <div class="carousel" data-name="block-18">
@@ -501,7 +501,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 19 -->
+    <!-- BLOCK 19 -->
     <div class="card section" id="block19">
       <span class="pill beige">Theatrical Gladiolus</span>
       <div class="carousel" data-name="block-19">
@@ -517,20 +517,20 @@
       </div>
     </div>
 
-    <!-- БЛОК 20 -->
+    <!-- BLOCK 20 -->
     <div class="card section" id="block20">
-      <span class="pill caramel">Блок 20</span>
+      <span class="pill caramel">Block 20</span>
       <div class="carousel" data-name="block-20">
         <div class="track">
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/3r2fFft8/Whats-App-Image-2025-10-25-at-12-31-46.jpg" alt="Блок 20 — 1"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/zDT2F2xX/Whats-App-Image-2025-10-25-at-12-31-47.jpg" alt="Блок 20 — 2"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/jqy343MK/Whats-App-Image-2025-10-25-at-12-31-48.jpg" alt="Блок 20 — 3"></div>
-          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/7PStntKx/Whats-App-Image-2025-10-25-at-12-31-49.jpg" alt="Блок 20 — 4"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/3r2fFft8/Whats-App-Image-2025-10-25-at-12-31-46.jpg" alt="Block 20 — 1"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/zDT2F2xX/Whats-App-Image-2025-10-25-at-12-31-47.jpg" alt="Block 20 — 2"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/jqy343MK/Whats-App-Image-2025-10-25-at-12-31-48.jpg" alt="Block 20 — 3"></div>
+          <div class="slide"><img loading="lazy" src="https://i.postimg.cc/7PStntKx/Whats-App-Image-2025-10-25-at-12-31-49.jpg" alt="Block 20 — 4"></div>
         </div>
       </div>
     </div>
 
-    <!-- БЛОК 21 -->
+    <!-- BLOCK 21 -->
     <div class="card section" id="block21">
       <span class="pill ivory">Four-de-lis</span>
       <div class="carousel" data-name="block-21">
@@ -544,7 +544,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 22 -->
+    <!-- BLOCK 22 -->
     <div class="card section" id="block22">
       <span class="pill coal">Arabian Breeze</span>
       <div class="carousel" data-name="block-22">
@@ -556,7 +556,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 23 -->
+    <!-- BLOCK 23 -->
     <div class="card section" id="block23">
       <span class="pill graphite">Maharashtrian Lakshmi</span>
       <div class="carousel" data-name="block-23">
@@ -567,7 +567,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 24 -->
+    <!-- BLOCK 24 -->
     <div class="card section" id="block24">
       <span class="pill beige">Jungle Monstera</span>
       <div class="carousel" data-name="block-24">
@@ -578,7 +578,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 25 -->
+    <!-- BLOCK 25 -->
     <div class="card section" id="block25">
       <span class="pill caramel">Seductive Tiara</span>
       <div class="carousel" data-name="block-25">
@@ -590,7 +590,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 26 -->
+    <!-- BLOCK 26 -->
     <div class="card section" id="block26">
       <span class="pill ivory">Playful Gerbera</span>
       <div class="carousel" data-name="block-26">
@@ -602,7 +602,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 27 -->
+    <!-- BLOCK 27 -->
     <div class="card section" id="block27">
       <span class="pill coal">Indian Jasmine</span>
       <div class="carousel" data-name="block-27">
@@ -618,7 +618,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 28 -->
+    <!-- BLOCK 28 -->
     <div class="card section" id="block28">
       <span class="pill graphite">Elegant Calla</span>
       <div class="carousel" data-name="block-28">
@@ -631,7 +631,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 29 -->
+    <!-- BLOCK 29 -->
     <div class="card section" id="block29">
       <span class="pill beige">Soul Chamomile</span>
       <div class="carousel" data-name="block-29">
@@ -642,7 +642,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 30 -->
+    <!-- BLOCK 30 -->
     <div class="card section" id="block30">
       <span class="pill caramel">Eternal Freesia</span>
       <div class="carousel" data-name="block-30">
@@ -659,7 +659,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 32 -->
+    <!-- BLOCK 32 -->
 <div class="card section" id="block31">
   <span class="pill ivory">Proud Amaryllis</span>
   <div class="carousel" data-name="block-31">
@@ -675,7 +675,7 @@
 </div>
 
 
-    <!-- БЛОК 32 -->
+    <!-- BLOCK 32 -->
     <div class="card section" id="block32">
       <span class="pill coal">Sea Padma</span>
       <div class="carousel" data-name="block-32">
@@ -687,7 +687,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 33 -->
+    <!-- BLOCK 33 -->
     <div class="card section" id="block33">
       <span class="pill graphite">Gerbera Daring</span>
       <div class="carousel" data-name="block-33">
@@ -699,7 +699,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 34 -->
+    <!-- BLOCK 34 -->
     <div class="card section" id="block34">
       <span class="pill beige">Datura Metel</span>
       <div class="carousel" data-name="block-34">
@@ -714,7 +714,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 36 -->
+    <!-- BLOCK 36 -->
     <div class="card section" id="block36">
       <span class="pill caramel">Rose Thorns</span>
       <div class="carousel" data-name="block-36">
@@ -725,7 +725,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 37 -->
+    <!-- BLOCK 37 -->
     <div class="card section" id="block37">
       <span class="pill ivory">Red Rose</span>
       <div class="carousel" data-name="block-37">
@@ -737,7 +737,7 @@
       </div>
     </div>
 
-    <!-- БЛОК 40 -->
+    <!-- BLOCK 40 -->
     <div class="card section" id="block40">
       <span class="pill graphite">Red Hibiscus</span>
       <div class="carousel" data-name="block-40">
@@ -750,8 +750,8 @@
     </div>
 
     <div class="card" style="background-image:var(--grad-orange); color:#1f1305; text-shadow:0 1px 0 rgba(255,255,255,.25);">
-      <h2 style="margin:0 0 6px 0">Советы по использованию</h2>
-      <div class="sub" style="color:#1f2937; font-weight:600">• Перетаскивайте мышью или касанием. • Свайп без кнопок. • Все изображения грузятся лениво.</div>
+      <h2 style="margin:0 0 6px 0">Usage tips</h2>
+      <div class="sub" style="color:#1f2937; font-weight:600">• Drag with the mouse or touch. • Swipe with no buttons. • All images load lazily.</div>
     </div>
   </div>
 </body>
